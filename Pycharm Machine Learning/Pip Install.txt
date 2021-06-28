@@ -1,0 +1,13 @@
+1 - Instale o Anaconda - https://www.anaconda.com/products/individual
+
+2- Instale as bibliotecas pelo Prompt de Comando, escrendo estes códigos um por vez:
+conda install matplotlib
+conda install numpy
+conda install pandas
+conda install -c plotly chart-studio
+
+** (opcional) caso não use o Pycharm instale o Jupyter Notebook em -- https://jupyter.org/install.html
+(não esqueça de marcar a caixa na instalação que autoriza o Jupyter a funcionar pelo Prompt)
+
+3 - Se for for usar o Pycharm escreva ao fim plt.show() para exibir a figura 
+    Se for usar o Jupyter Notebook (o mais recomendado) use %matplotlib inline
