@@ -1,0 +1,44 @@
+Supervised Learning
+Pode ser usado em linhas de produção para predições de falhas, etc
+http://repositorio.utfpr.edu.br/jspui/handle/1/4607
+
+Regressão Logísticas
+Regressão Logística é um método de classificação.
+Alguns exemplos de problemas de classificação:
+	Filtos de e-mais(spams ou não).
+	Modelos preditores de clientes inadimplentes.
+	Diagnóstico de doenças.
+
+RL nos permite resolver problemas de classificação onde estamos tentandos predizer categorias discretas, como 
+por exemplo as intenções de votos em um período eleitoral. Ou seja, este tipo de algoritmo analisa diferentes
+variáveis de um objeto (gênero, estado civil, emprego, nascimento, ...) e tenta determinar uma classe em que
+ele se encaixa melhor. Ademais, por convenção, classificações binárias terão duas classes: 0 e 1, ou seja
+podemos classificar os dados em verdadeiro ou falso. Assim, este método é támbem útilizado para estudar variáveis
+Dummys que são compostas apenas por duas opções de evento "sim" ou "não". Entretanto, não se limita a apenas
+eventos binários, uma vez que possuimos os métodos:
+	Regressão logística binominal
+	Regressão logística ordinal -- Este por exemplo é capaz de avaliar se o desempenho de um atleta é bom,
+	regular ou excelente.
+	Regressão logística multinomial
+
+
+Usando a função logística (sigmoide), se o output for: output > 0 == 1
+						       output < 0 == 0
+** Essa função só retorna 0 e 1 para todos os valores substituidos em seu z
+
+f(z)= 1/1+euler^z
+
+Após treinarmos um modelo de regressão logística, testamos o mesmo em um conjunto e dados testes.
+Porém, as métricas de avaliação de desempenho do modelo são diferentes das vistas anteriormente. 
+A principal forma de avalia-lo é utilizando uma matriz de confusão.
+
+True Positive (TP) 
+True Negative (TN)  
+False Positive (FP) - Erro do tipo 1
+False Negativa (FN) - Erro do tipo 2
+
+Precisão:
+Quanto em média o modelo acerta?
+(TP + TN)/ total = 150 / 165 = 0.91 -- neste caso 91%
+Quanto em média o modelo erra?
+(FP + FN) / total = 15/165 = 0.09 --  neste caso 9%

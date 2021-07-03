@@ -1,0 +1,30 @@
+import pandas as pd 
+tabela_clientes = pd.read_csv('path', encoding='latin1')
+tabela_clientes = tabela_clientes.drop('CLIENTENUM', axis=1) # excluir a coluna sem utilidade
+
+display(tabela_clientes.info()) # repare que a linha Categoria Cartão possui 10126 ao inves de 10127, ou seja está vazia
+                                # for isso vamos excluir a linha
+
+tabela_clientes = tabela_clientes.dropna()  # exclui a linha que tem item vazio
+
+display(tabela_clientes.describe())     # da informações de cada coluna
+
+display(tabela_clientes['Categoria'].value_counts()) 
+display(tabela_clientes['Categoria'].value_counts(normalize=True)) # o normalize vê o percentual 
+
+# analisar o 80/20 - Regra de Pareto (os 20% dos problemas responsaveis pelos 80% dos erros)
+
+import plotly.express as px
+
+# sempre que vc faz um for com uma tabela ele percorre todas as colunas, para linhas
+# use tabela_clientes.index()
+
+for coluna in tabela_clientes:   
+	fig = px.histogram(tabela_clientes, x=coluna, color='Categoria Cartão')
+# isso faz uma análise preditiva (aquilo que salta aos olhos)
+fig.show()
+
+
+
+
+   

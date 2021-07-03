@@ -1,0 +1,23 @@
+conda install seaborn
+conda install matplotlib
+conda install numpy
+conda install pandas
+pip install plotly
+pip install cufflinks
+conda install -c plotly chart-studio
+pip install pandas-datareader
+pip install scikit-learn
+pip install SpeechRecognition
+pip install C:\Users\Asus\Downloads\PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+
+Para Chatbot
+!pip install chatterbot
+!pip install chatterbot_corpus
+
+para web scrapping
+pip install xlrd
+openpyxl
+pip install requests
+pip install beautifulsoup4
+pip install selenium
+
