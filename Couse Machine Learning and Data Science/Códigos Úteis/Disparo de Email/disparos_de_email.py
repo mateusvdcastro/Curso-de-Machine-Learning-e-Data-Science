@@ -42,9 +42,9 @@ def enviar_email(nome_loja, tabela):
     # Gerenciar Conta Google -> Segurança -> Aplicativos não Seguros -> Habilitar
     # Caso mesmo assim dê o erro: smtplib.SMTPAuthenticationError: (534,
     # Você faz o login no seu e-mail e depois entra em: https://accounts.google.com/DisplayUnlockCaptcha
-    msg['From'] = 'mateusvc1124@gmail.com'
-    msg['To'] = 'mateusvc11@gmail.com'
-    password = "1424738wsE"
+    msg['From'] = 'email de quem envia'
+    msg['To'] = 'email de quem recebe'
+    password = "senha do email"
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email )
     s = smtplib.SMTP('smtp.gmail.com: 587')
