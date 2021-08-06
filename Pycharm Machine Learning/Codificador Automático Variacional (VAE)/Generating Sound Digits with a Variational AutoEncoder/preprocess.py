@@ -174,6 +174,7 @@ class PreprocessingPipeline:
             "max": max_val
         }
 
+
 if __name__ == "__main__":
     FRAME_SIZE = 512
     HOP_LENGTH = 256
