@@ -44,5 +44,5 @@ if __name__ == "__main__":
     outputs = mlp.forward_propagate(inputs)
 
     # print the results
-    print(f"The network output is: {inputs}")
+    print(f"The network input is: {inputs}")
     print(f"The network output is: {outputs}")
