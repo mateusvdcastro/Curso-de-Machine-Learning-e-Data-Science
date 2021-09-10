@@ -1,0 +1,10 @@
+Passos de um projeto de ciencias de dados
+
+1. Entendimento do desafio
+2. Entendimento da Empresa/Área
+3. Extração/Obtenção de Dados
+4. Ajuste de Dados(Limpeza de dados)
+5. Análise Exploratória
+6. Modelagem +Algoritmos
+7. Interpretação de dados
+8. Deploy/Produção
