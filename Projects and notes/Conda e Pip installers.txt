@@ -10,6 +10,9 @@ pip install scikit-learn
 pip install SpeechRecognition
 pip install C:\Users\Asus\Downloads\PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 
+Para Processamento de linguagem Natural:
+pip install nltk
+
 Para Chatbot
 !pip install chatterbot
 !pip install chatterbot_corpus
